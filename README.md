@@ -1,2 +1,9 @@
 # CarDealershipADO
  ASP.Net Core MVC Web App with Razor Pages. Data storage in data bank on MSSQL Server https://github.com/LaszloT0TH/CarDealerShipDB
+Online Shop provides customers, unregistered users and data processing for car dealership employees. Four types of isolation levels: guest, registered customer, employee, manager.
+Guest access: list of cars and car accessories, search in the list.
+Registered customer: add guest + car accessory product to shopping cart, change quantity, order + own shopping cart (= draft order list), edit, delete shopping cart, send its contents to actual orders. The contents of the basket are stored in a data bank for a long time.
+Seller: registered customer + add, edit, delete cars and car accessories + add, search, delete, edit customer data + search, delete, edit customer data.
+Manager: Seller + add, search, delete sellers, edit their data + inventory upload list. Change of minimum stock. Car accessory product group, sales units, countries, fuels, transmission types, order statuses, genders, foreign languages insert, update, delete functions.
+Stock upload list (automatically generated and maintained list): car accessories have a minimum stock quantity property, this value is set for every change in the stock quantity (=insert, update, delete functions). If the inventory falls below the minimum level, the product is added to the inventory replenishment list. If the stock is full, delete the product from the list. The associated button can only exist if the list contains an element.
+Shopping cart for sellers and managers: adding cars and car accessory products to the shopping cart, changing the quantity for car accessories, adding a customer, placing an order. The order button is only visible if a customer is assigned to each product in the list.
