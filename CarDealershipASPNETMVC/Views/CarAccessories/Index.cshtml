@@ -1,0 +1,102 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.CarAccessoriesModel>
+
+@{
+}
+
+<h1>Auto Zubehör</h1>
+
+<br />
+<h2>Auto Zubehör Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Auto Zubehör", "Search")</a>
+@if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+{
+    <a class='btn btn-primary btn-sm' @Html.ActionLink("Create neue Auto Zubehör", "Create")></a>
+}
+<table class="table">
+    <thead>
+        <tr>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <th>@Html.DisplayNameFor(model => model.CAId)</th>
+            }
+            <th>@Html.DisplayNameFor(model => model.ProductName)</th>
+            <th>@Html.DisplayNameFor(model => model.CAPGName)</th>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <th>@Html.DisplayNameFor(model => model.QuantityOfStock)</th>
+                @if (GlobalData.UserAccess == "Manager")
+                {
+                    <th>@Html.DisplayNameFor(model => model.MinimumStockQuantity)</th>            
+                }
+            }
+            <th>@Html.DisplayNameFor(model => model.NetSellingPrice)</th>
+            <th>@Html.DisplayNameFor(model => model.SalesUnit)</th>
+            <th>@Html.DisplayNameFor(model => model.UnitPrice)</th>
+            <th>@Html.DisplayNameFor(model => model.UnitName)</th>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <th>@Html.DisplayNameFor(model => model.LastUpdateTime)</th>
+            }
+            <th>@Html.DisplayNameFor(model => model.Brand)</th>
+            <th>@Html.DisplayNameFor(model => model.CreationDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Description)</th>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <th>@Html.DisplayNameFor(model => model.Version)</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CarAccessoriesModel carAccessories in Model)
+        {
+            <tr>
+                @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+                {
+                    <td>@carAccessories.CAId</td>
+                }
+                <td>@carAccessories.ProductName</td>
+                <td>@carAccessories.CAPGName</td>
+                @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+                {
+                    <td>@carAccessories.QuantityOfStock</td>
+                    @if (GlobalData.UserAccess == "Manager")
+                    {
+                        <td>@carAccessories.MinimumStockQuantity</td>
+                    }
+                }
+                <td>@carAccessories.NetSellingPrice</td>
+                <td>@carAccessories.SalesUnit</td>
+                <td>@carAccessories.UnitPrice</td>
+                <td>@carAccessories.UnitName</td>
+                @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+                {
+                    <td>@carAccessories.LastUpdateTime.ToString()</td>
+                }
+                <td>@carAccessories.Brand</td>
+                <td>@carAccessories.CreationDate.ToString()</td>
+                <td>@carAccessories.Description</td>
+                @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+                {
+                    <td>@carAccessories.Version</td>
+                }
+                <td>                     
+                    @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+                    {
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=carAccessories.CAId })></a>
+                    }
+
+                    @if (GlobalData.UserAccess != "Guest")
+                    {
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("In den Einkaufswagen", "Sale", new { id=carAccessories.CAId })></a>
+                    }
+
+                    @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+                    {
+                        <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=carAccessories.CAId })></a>
+                    }
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,100 @@
+﻿@model CarDealershipASPNETMVC.Models.CarModel
+
+@{
+   
+}
+<br />
+<h2>Search Autos</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (GlobalData.UserAccess == "Manager" || GlobalData.UserAccess == "Salesperson")
+            {
+                <div class="form-group">
+                    <label asp-for="CarId" class="control-label"></label>
+                    <input asp-for="CarId" class="form-control" />
+                    <span asp-validation-for="CarId" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number_of_seats" class="control-label"></label>
+                <input asp-for="Number_of_seats" class="form-control" />
+                <span asp-validation-for="Number_of_seats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year_of_production" class="control-label"></label>              
+                <input asp-for="Year_of_production" class="form-control" />
+                <span asp-validation-for="Year_of_production" class="text-danger"></span>              
+            </div>
+            <div class="form-group">
+                <label asp-for="FuelName" class="control-label"></label>
+                 <br />
+                 @Html.DropDownListFor(model => model.FuelName, new SelectList( ViewBag.Fuel, "FuelName", "FuelName"), "Select Fuel")
+                 <span asp-validation-for="FuelName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GearboxName" class="control-label"></label>
+                 <br />
+                 @Html.DropDownListFor(model => model.GearboxName, new SelectList( ViewBag.Gearbox, "GearboxName", "GearboxName"), "Select Gearbox")
+                 <span asp-validation-for="GearboxName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cubic_capacity" class="control-label"></label>
+                <input asp-for="Cubic_capacity" class="form-control" />
+                <span asp-validation-for="Cubic_capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mileage" class="control-label"></label>
+                <input asp-for="Mileage" class="form-control" />
+                <span asp-validation-for="Mileage" class="text-danger"></span>
+            </div>
+            @if (GlobalData.UserAccess == "Manager" || GlobalData.UserAccess == "Salesperson")
+            {
+                <div class="form-group">
+                    <label asp-for="Chassis_number" class="control-label"></label>
+                    <input asp-for="Chassis_number" class="form-control" />
+                    <span asp-validation-for="Chassis_number" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="Engine_power" class="control-label"></label>
+                <input asp-for="Engine_power" class="form-control" />
+                <span asp-validation-for="Engine_power" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Own_Weight" class="control-label"></label>
+                <input asp-for="Own_Weight" class="form-control" />
+                <span asp-validation-for="Own_Weight" class="text-danger"></span>
+            </div>
+            @if (GlobalData.UserAccess == "Manager" || GlobalData.UserAccess == "Salesperson")
+            {
+                <div class="form-group">
+                    <label asp-for="Sold" class="control-label"></label>
+                    <br />
+                     @Html.CheckBoxFor(x => x.Sold, new { @checked="checked" })
+                    <span asp-validation-for="Sold" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="NettoPrice" class="control-label"></label>
+                <input asp-for="NettoPrice" class="form-control" />
+                <span asp-validation-for="NettoPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

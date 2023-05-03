@@ -1,0 +1,100 @@
+﻿@model CarDealershipASPNETMVC.Models.CarAccessoriesModel
+@{
+}
+<br />
+<h2>Search Auto Zubehör</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <div class="form-group">
+                    <label asp-for="CAId" class="control-label"></label>
+                    <input asp-for="CAId" class="form-control" />
+                    <span asp-validation-for="CAId" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CAPGName" class="control-label"></label>
+                 <br />
+                 @Html.DropDownListFor(model => model.CAPGName, new SelectList( ViewBag.CarAccessoriesProductGroup, "CAPGName", "CAPGName"), "Select Product Group")
+                 <span asp-validation-for="CAPGName" class="text-danger"></span>
+            </div>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <div class="form-group">
+                    <label asp-for="QuantityOfStock" class="control-label"></label>
+                    <input asp-for="QuantityOfStock" class="form-control" />
+                    <span asp-validation-for="QuantityOfStock" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MinimumStockQuantity" class="control-label"></label>
+                    <input asp-for="MinimumStockQuantity" class="form-control" />
+                    <span asp-validation-for="MinimumStockQuantity" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="NetSellingPrice" class="control-label"></label>              
+                <input asp-for="NetSellingPrice" class="form-control" />
+                <span asp-validation-for="NetSellingPrice" class="text-danger"></span>              
+            </div>
+            <div class="form-group">
+                <label asp-for="SalesUnit" class="control-label"></label>
+                <input asp-for="SalesUnit" class="form-control" />
+                <span asp-validation-for="SalesUnit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnitPrice" class="control-label"></label>
+                <input asp-for="UnitPrice" class="form-control" />
+                <span asp-validation-for="UnitPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnitName" class="control-label"></label>
+                 <br />
+                 @Html.DropDownListFor(model => model.UnitName, new SelectList( ViewBag.CarAccessoriesUnit, "UnitName", "UnitName"), "Select the Unit")
+                <span asp-validation-for="UnitName" class="text-danger"></span>
+            </div>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <div class="form-group">
+                    <label asp-for="LastUpdateTime" class="control-label"></label>
+                    <input asp-for="LastUpdateTime" class="form-control" />
+                    <span asp-validation-for="LastUpdateTime" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreationDate" class="control-label"></label>
+                <input asp-for="CreationDate" class="form-control" />
+                <span asp-validation-for="CreationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            @if (GlobalData.UserAccess != "Customer" && GlobalData.UserAccess != "Guest")
+            {
+                <div class="form-group">
+                    <label asp-for="Version" class="control-label"></label>
+                    <input asp-for="Version" class="form-control" />
+                    <span asp-validation-for="Version" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

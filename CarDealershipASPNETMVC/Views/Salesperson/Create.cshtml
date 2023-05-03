@@ -1,0 +1,99 @@
+﻿@model CarDealershipASPNETMVC.Models.SalespersonInsertUpdateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Verkäufer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="SexName" class="control-label"></label>
+                <div>
+                 @Html.DropDownListFor(model => model.SexName, new SelectList( ViewBag.Sex, "SexName", "SexName"), "Select Geschlecht")
+                </div>
+                <span asp-validation-for="SexName" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="SpokenLanguesName" class="control-label"></label>
+                <div>
+                 @Html.DropDownListFor(model => model.SpokenLanguesName, new SelectList( ViewBag.SpokenLangues, "SpokenLanguesName", "SpokenLanguesName"), "Select Sprachen")
+                </div>
+                <span asp-validation-for="SpokenLanguesName" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="ManagerId" class="control-label"></label>
+                 <div>
+                 @Html.DropDownListFor(model => model.ManagerId, new SelectList( ViewBag.Manager, "ManagerId", "ManagerFullName"), "Select Manager")
+                </div>
+                <span asp-validation-for="ManagerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Street" class="control-label"></label>
+                <input asp-for="Street" class="form-control" />
+                <span asp-validation-for="Street" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="House_Number" class="control-label"></label>              
+                <input asp-for="House_Number" class="form-control" />
+                <span asp-validation-for="House_Number" class="text-danger"></span>              
+            </div>
+            <div class="form-group">
+                <label asp-for="PostalCode" class="control-label"></label>
+                <input asp-for="PostalCode" class="form-control" />
+                <span asp-validation-for="PostalCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountryName" class="control-label"></label>
+                 <div>
+                @Html.DropDownListFor(model => model.CountryName, new SelectList( ViewBag.Country, "CountryName", "CountryName"), "Select Land")               
+                </div>
+                <span asp-validation-for="CountryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EntryDate" class="control-label"></label>
+                <input asp-for="EntryDate" class="form-control" />
+                <span asp-validation-for="EntryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelNr" class="control-label"></label>
+                <input asp-for="TelNr" class="form-control" />
+                <span asp-validation-for="TelNr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+

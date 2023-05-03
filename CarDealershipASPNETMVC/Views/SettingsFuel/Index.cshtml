@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.FuelModel>
+
+@{ 
+}
+
+<h1>Kraftstoff</h1>
+
+<br />
+<h2>Kraftstoff Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Kraftstoff", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create neu Kraftstoff", "Create")></a>      
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.FuelID)</th>
+            <th>@Html.DisplayNameFor(model => model.FuelName)</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (FuelModel fuel in Model)
+            {
+                <tr>
+                    <td>@fuel.FuelID</td>
+                    <td>@fuel.FuelName</td>
+                    <td>                     
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=fuel.FuelID })></a>
+                        
+                        <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=fuel.FuelID })></a>                
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>

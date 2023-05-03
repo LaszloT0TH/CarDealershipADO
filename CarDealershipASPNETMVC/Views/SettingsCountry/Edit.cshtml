@@ -1,0 +1,28 @@
+﻿@model CarDealershipASPNETMVC.Models.CountryModel
+@{
+}
+<br />
+<h2>Edit Country</h2>
+
+<form method="post" action="Edit" class="mt-5">
+     <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CountryId)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="CountryId" readonly>
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CountryName)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="CountryName">
+        </div>
+    </div>
+        <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CountryTaxPercentageValue)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="CountryTaxPercentageValue">
+        </div>
+    </div>
+<br />
+    <button type="submit" class="btn-primary">Submit</button>
+</form>

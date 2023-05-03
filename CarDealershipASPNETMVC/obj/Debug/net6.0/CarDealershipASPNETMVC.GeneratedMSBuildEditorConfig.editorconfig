@@ -1,0 +1,272 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CarDealershipASPNETMVC
+build_property.RootNamespace = CarDealershipASPNETMVC
+build_property.ProjectDir = C:\Users\user\Desktop\Apa pendrive\C#\CarDealershipASPNETMVC Github\CarDealershipASPNETMVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\Apa pendrive\C#\CarDealershipASPNETMVC Github\CarDealershipASPNETMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/CarAccessories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyQWNjZXNzb3JpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/CarAccessories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyQWNjZXNzb3JpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/CarAccessories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyQWNjZXNzb3JpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/CarAccessories/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyQWNjZXNzb3JpZXNcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Car/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Car/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Car/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Car/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Customer/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Login/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Order/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Order/StockReplenishmentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcU3RvY2tSZXBsZW5pc2htZW50TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Salesperson/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNwZXJzb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Salesperson/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNwZXJzb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Salesperson/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNwZXJzb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Salesperson/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNwZXJzb25cU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesProductGroup/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1Byb2R1Y3RHcm91cFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesProductGroup/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1Byb2R1Y3RHcm91cFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesProductGroup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1Byb2R1Y3RHcm91cFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesProductGroup/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1Byb2R1Y3RHcm91cFxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesUnit/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1VuaXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesUnit/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1VuaXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesUnit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1VuaXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCarAccessoriesUnit/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDYXJBY2Nlc3Nvcmllc1VuaXRcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCountry/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDb3VudHJ5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCountry/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDb3VudHJ5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCountry/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDb3VudHJ5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsCountry/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NDb3VudHJ5XFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsFuel/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NGdWVsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsFuel/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NGdWVsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsFuel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NGdWVsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsFuel/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NGdWVsXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsGearbox/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NHZWFyYm94XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsGearbox/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NHZWFyYm94XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsGearbox/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NHZWFyYm94XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsGearbox/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NHZWFyYm94XFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsOrderStatus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NPcmRlclN0YXR1c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsOrderStatus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NPcmRlclN0YXR1c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsOrderStatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NPcmRlclN0YXR1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsOrderStatus/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NPcmRlclN0YXR1c1xTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSex/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTZXhcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSex/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTZXhcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSex/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTZXhcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSex/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTZXhcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSpokenLangues/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTcG9rZW5MYW5ndWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSpokenLangues/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTcG9rZW5MYW5ndWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSpokenLangues/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTcG9rZW5MYW5ndWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsSpokenLangues/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NTcG9rZW5MYW5ndWVzXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/SettingsWithManagerAccess/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NXaXRoTWFuYWdlckFjY2Vzc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/ShoppingCart/AddCustoner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEFkZEN1c3RvbmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/ShoppingCart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/ShoppingCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Apa pendrive/C\#/CarDealershipASPNETMVC Github/CarDealershipASPNETMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-durz4isj5v

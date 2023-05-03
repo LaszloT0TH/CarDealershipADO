@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.OrderStatusModel>
+
+@{ 
+}
+
+<h1>Auftragsstatus</h1>
+
+<br />
+<h2>Auftragsstatus Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Auftragsstatus", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create neu Auftragsstatus", "Create")></a>      
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.OrderStatusId)</th>
+            <th>@Html.DisplayNameFor(model => model.OrderStatusName)</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (OrderStatusModel OS in Model)
+            {
+                <tr>
+                    <td>@OS.OrderStatusId</td>
+                    <td>@OS.OrderStatusName</td>
+                    <td>                     
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=OS.OrderStatusId })></a>
+                        
+                        <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=OS.OrderStatusId })></a>                
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>

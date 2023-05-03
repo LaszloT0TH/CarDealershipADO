@@ -1,0 +1,28 @@
+﻿@model CarDealershipASPNETMVC.Models.CarAccessoriesProductGroupModel
+
+@{
+   
+}
+<br />
+<h2>Search Kraftstoff</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CAPGId" class="control-label"></label>
+                <input asp-for="CAPGId" class="form-control" />
+                <span asp-validation-for="CAPGId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CAPGName" class="control-label"></label>
+                <input asp-for="CAPGName" class="form-control" />
+                <span asp-validation-for="CAPGName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

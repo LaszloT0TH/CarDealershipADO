@@ -1,0 +1,135 @@
+﻿@model CarDealershipASPNETMVC.Models.OrderModel
+@{
+}
+<br />
+<h2>Search Auftrag</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OrderId" class="control-label"></label>
+                <input asp-for="OrderId" class="form-control" />
+                <span asp-validation-for="OrderId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label>
+                <div class="col-sm6">
+                    @Html.DropDownListFor(model => model.CustomerId, new SelectList( ViewBag.CustomersList, "CustomerId", "CustomersListItem"), "Select Kunde")
+                </div>
+                <span asp-validation-for="CustomerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerFirstName" class="control-label"></label>
+                <input asp-for="CustomerFirstName" class="form-control" />
+                <span asp-validation-for="CustomerFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerLastName" class="control-label"></label>
+                <input asp-for="CustomerLastName" class="form-control" />
+                <span asp-validation-for="CustomerLastName" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="SalesPersonId" class="control-label"></label>
+                <div>
+                 @Html.DropDownListFor(model => model.SalesPersonId, new SelectList( ViewBag.SalesPersonsList, "SalesId", "SalespersonsListItem"), "Select Verkaufer")
+                </div>
+                <span asp-validation-for="SalesPersonId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalesPersonFirstName" class="control-label"></label>
+                <input asp-for="SalesPersonFirstName" class="form-control" />
+                <span asp-validation-for="SalesPersonFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalesPersonLastName" class="control-label"></label>
+                <input asp-for="SalesPersonLastName" class="form-control" />
+                <span asp-validation-for="SalesPersonLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductId" class="control-label"></label>
+                <input asp-for="ProductId" class="form-control" />
+                <span asp-validation-for="ProductId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductGroup" class="control-label"></label>
+                <div>
+                    @Html.DropDownListFor(model => model.ProductGroup, new SelectList( ViewBag.CarAccessoriesProductGroupList, "CAPGName", "CAPGName"), "Select Produktgruppe")
+                </div>
+                <span asp-validation-for="ProductGroup" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarModel" class="control-label"></label>
+                <input asp-for="CarModel" class="form-control" />
+                <span asp-validation-for="CarModel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarColor" class="control-label"></label>
+                <input asp-for="CarColor" class="form-control" />
+                <span asp-validation-for="CarColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderDate" class="control-label"></label>
+                <input asp-for="OrderDate" class="form-control" />
+                <span asp-validation-for="OrderDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderStatusId" class="control-label"></label>
+                <div>
+                 @Html.DropDownListFor(model => model.OrderStatusId, new SelectList( ViewBag.OrderStatusList, "OrderStatusId", "OrderStatusName"), "Bestellstatus")
+                </div>
+                <span asp-validation-for="OrderStatusId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderStatusName" class="control-label"></label>
+                <input asp-for="OrderStatusName" class="form-control" />
+                <span asp-validation-for="OrderStatusName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Discount" class="control-label"></label>
+                <input asp-for="Discount" class="form-control" />
+                <span asp-validation-for="Discount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShippedDate" class="control-label"></label>
+                <input asp-for="ShippedDate" class="form-control" />
+                <span asp-validation-for="ShippedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaleAmount" class="control-label"></label>
+                <input asp-for="SaleAmount" class="form-control" />
+                <span asp-validation-for="SaleAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaleAmountPaid" class="control-label"></label>
+                <input asp-for="SaleAmountPaid" class="form-control" />
+                <span asp-validation-for="SaleAmountPaid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaxPercentageValue" class="control-label"></label>
+                <input asp-for="TaxPercentageValue" class="form-control" />
+                <span asp-validation-for="TaxPercentageValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaleTime" class="control-label"></label>
+                <input asp-for="SaleTime" class="form-control" />
+                <span asp-validation-for="SaleTime" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

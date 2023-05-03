@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.GearboxModel>
+
+@{ 
+}
+
+<h1>Getriebe</h1>
+
+<br />
+<h2>Getriebe Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Getriebe", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create neu Getriebe", "Create")></a>      
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.GearboxId)</th>
+            <th>@Html.DisplayNameFor(model => model.GearboxName)</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (GearboxModel gearbox in Model)
+            {
+                <tr>
+                    <td>@gearbox.GearboxId</td>
+                    <td>@gearbox.GearboxName</td>
+                    <td>                     
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=gearbox.GearboxId })></a>
+                        
+                        <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=gearbox.GearboxId })></a>                
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>

@@ -1,0 +1,94 @@
+﻿@model CarDealershipASPNETMVC.Models.CarModel
+@{
+}
+<br />
+<h2>Edit Auto</h2>
+
+<form method="post" action="Edit" class="mt-5">
+     <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CarId)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="CarId" readonly>
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Model)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="Model">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Color)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="Color">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Number_of_seats)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="Number_of_seats">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Year_of_production)</label>
+        <div class="col-sm6">
+            <input type="date" class="form-control" asp-for="Year_of_production">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.FuelName)</label>
+        <div >
+            @Html.DropDownListFor(model => model.FuelName, new SelectList( ViewBag.Fuel, "FuelName", "FuelName"))
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.GearboxName)</label>
+        <div >
+            @Html.DropDownListFor(model => model.GearboxName, new SelectList( ViewBag.Gearbox, "GearboxName", "GearboxName"))
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Cubic_capacity)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="Cubic_capacity">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Mileage)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="Mileage">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Chassis_number)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="Chassis_number">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Engine_power)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="Engine_power">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Own_Weight)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="Own_Weight">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Sold)</label>
+        <div >
+            @Html.CheckBoxFor(x => x.Sold, new { @checked="checked"})
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.NettoPrice)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="NettoPrice">
+        </div>
+    </div> 
+<br />
+    <button type="submit" class="btn-primary">Submit</button>
+</form>

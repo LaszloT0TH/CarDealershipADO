@@ -1,0 +1,76 @@
+﻿@model CarDealershipASPNETMVC.Models.OrderModel
+@{
+}
+<br />
+<h2>Edit Auftrag</h2>
+
+<form method="post" action="Edit" class="mt-5">
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.OrderId)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="OrderId" readonly>
+        </div>
+    </div>
+     <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CustomerId)</label>
+        <div class="col-sm6">
+                 @Html.DropDownListFor(model => model.CustomerId, new SelectList( ViewBag.CustomersList, "CustomerId", "CustomersListItem"))
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.SalesPersonId)</label>
+        <div class="col-sm6">
+                 @Html.DropDownListFor(model => model.SalesPersonId, new SelectList( ViewBag.SalesPersonsList, "SalesId", "SalespersonsListItem"))
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.ProductId)</label>
+        <div class="col-sm6">
+                 @Html.DropDownListFor(model => model.ProductId, new SelectList( ViewBag.CarAccessoriesList, "CAId", "CarAccessoriesListItem"))
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Quantity)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="Quantity">
+        </div>
+    </div>
+     <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.OrderStatusId)</label>
+        <div class="col-sm6">
+                 @Html.DropDownListFor(model => model.OrderStatusId, new SelectList( ViewBag.OrderStatusList, "OrderStatusId", "OrderStatusName"))
+        </div>
+    </div>
+         <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Discount)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="Discount">
+        </div>
+    </div>
+        <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.ShippedDate)</label>
+        <div class="col-sm6">
+            <input type="date" class="form-control" asp-for="ShippedDate">
+        </div>
+    </div>
+     <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.SaleAmount)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="SaleAmount">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.SaleAmountPaid)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="SaleAmountPaid">
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.TaxPercentageValue)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="TaxPercentageValue">
+        </div>
+    </div>
+<br />
+    <button type="submit" class="btn-primary">Submit</button>
+</form>

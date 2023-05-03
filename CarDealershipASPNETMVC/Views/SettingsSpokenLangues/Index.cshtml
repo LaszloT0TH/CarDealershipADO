@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.SpokenLanguesModel>
+
+@{ 
+}
+
+<h1>Muttersprache</h1>
+
+<br />
+<h2>Muttersprache Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Muttersprache", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create neu Muttersprache", "Create")></a>      
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.SpokenLanguesId)</th>
+            <th>@Html.DisplayNameFor(model => model.SpokenLanguesName)</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (SpokenLanguesModel spLangues in Model)
+            {
+                <tr>
+                    <td>@spLangues.SpokenLanguesId</td>
+                    <td>@spLangues.SpokenLanguesName</td>
+                    <td>                     
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=spLangues.SpokenLanguesId })></a>
+                        
+                        <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=spLangues.SpokenLanguesId })></a>                
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>

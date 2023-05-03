@@ -1,0 +1,41 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.StockReplenishmentListModel>
+
+@{
+}
+<h1>Bestandsauffüllungsliste</h1>
+
+<br />
+<h2>Bestandsauffüllungsliste</h2>
+@*<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Artikel", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create Artikel", "Create")</a>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.SRLId)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductId)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductName)</th>
+            <th>@Html.DisplayNameFor(model => model.OrderedStatus)</th>
+            <th>@Html.DisplayNameFor(model => model.SRLTimeStamp)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (StockReplenishmentListModel SRL in Model)
+        {
+            <tr>
+                <td>@SRL.SRLId</td>
+                <td>@SRL.ProductId</td>
+                <td>@SRL.ProductName</td>
+                <td>@SRL.OrderedStatus</td>
+                <td>@SRL.SRLTimeStamp</td>
+                @*<td>                     
+                    <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=SRL.SRLId })></a>
+  
+                    <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=SRL.SRLId })></a>
+
+                </td>*@
+                
+                
+            </tr>
+        }
+    </tbody>
+</table>

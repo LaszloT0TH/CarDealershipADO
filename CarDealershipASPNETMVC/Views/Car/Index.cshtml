@@ -1,0 +1,104 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.CarModel>
+
+@{ 
+}
+
+<h1>Autos</h1>
+
+<br />
+<h2>Autos Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Auto", "Search")</a>
+@if (GlobalData.UserAccess == "Manager" || GlobalData.UserAccess == "Salesperson")
+{
+    <a class='btn btn-primary btn-sm' @Html.ActionLink("Create neu Auto", "Create")></a>
+}      
+
+<table class="table">
+    <thead>
+        <tr>
+            @if (GlobalData.UserAccess == "Manager" || GlobalData.UserAccess == "Salesperson")
+            {
+                <th>@Html.DisplayNameFor(model => model.CarId)</th>
+            }
+            <th>@Html.DisplayNameFor(model => model.Model)</th>
+            <th>@Html.DisplayNameFor(model => model.Color)</th>
+            <th>@Html.DisplayNameFor(model => model.Number_of_seats)</th>
+            <th>@Html.DisplayNameFor(model => model.Year_of_production)</th>
+            <th>@Html.DisplayNameFor(model => model.FuelName)</th>
+            <th>@Html.DisplayNameFor(model => model.GearboxName)</th>
+            <th>@Html.DisplayNameFor(model => model.Cubic_capacity)</th>
+            <th>@Html.DisplayNameFor(model => model.Mileage)</th>
+            @if (GlobalData.UserAccess == "Manager" || GlobalData.UserAccess == "Salesperson")
+            {
+                <th>@Html.DisplayNameFor(model => model.Chassis_number)</th>
+            }
+            <th>@Html.DisplayNameFor(model => model.Engine_power)</th>
+            <th>@Html.DisplayNameFor(model => model.Own_Weight)</th>
+            @if (GlobalData.UserAccess == "Manager" || GlobalData.UserAccess == "Salesperson")
+            {
+                <th>@Html.DisplayNameFor(model => model.Sold)</th>
+            }
+            <th>@Html.DisplayNameFor(model => model.NettoPrice)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (GlobalData.UserAccess == "Customer" || GlobalData.UserAccess == "Guest")
+        {
+            @foreach (CarModel car in Model)
+            {
+                // The sold cars should not be visible at customer and guest access
+                // Die verkauften Autos sollen im Kunden- und Gastzugang nicht sichtbar sein
+                @if (!car.Sold)
+                {
+                    <tr>
+                    <td>@car.Model</td>
+                    <td>@car.Color</td>
+                    <td>@car.Number_of_seats</td>
+                    <td>@car.Year_of_production</td>
+                    <td>@car.FuelName</td>
+                    <td>@car.GearboxName</td>
+                    <td>@car.Cubic_capacity</td>
+                    <td>@car.Mileage</td>
+                    <td>@car.Engine_power</td>
+                    <td>@car.Own_Weight</td>
+                    <td>@car.NettoPrice</td>
+                </tr>
+                }
+            }
+        }
+        else
+        {
+            @foreach (CarModel car in Model)
+            {
+                <tr>
+                    <td>@car.CarId</td>
+                    <td>@car.Model</td>
+                    <td>@car.Color</td>
+                    <td>@car.Number_of_seats</td>
+                    <td>@car.Year_of_production</td>
+                    <td>@car.FuelName</td>
+                    <td>@car.GearboxName</td>
+                    <td>@car.Cubic_capacity</td>
+                    <td>@car.Mileage</td>
+                    <td>@car.Chassis_number</td>
+                    <td>@car.Engine_power</td>
+                    <td>@car.Own_Weight</td>
+                    <td><input type="checkbox" checked="@car.Sold"/></td>
+                    <td>@car.NettoPrice</td>
+                    <td>                     
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=car.CarId })></a>
+                        
+                        @if (car.Sold == false)
+                        {
+                            <a class="btn btn-primary btn-sm" @Html.ActionLink("In den Einkaufswagen", "Sale", new { id=car.CarId })></a>
+                        }
+
+                        <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=car.CarId })></a>                
+                    </td>
+                
+                
+                </tr>
+            }
+        }
+    </tbody>
+</table>

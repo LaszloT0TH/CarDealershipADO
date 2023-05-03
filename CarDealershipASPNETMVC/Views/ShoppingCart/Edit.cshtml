@@ -1,0 +1,137 @@
+﻿@model CarDealershipASPNETMVC.Models.OrderModel
+@{
+    //ShoppingCart Edit
+}
+<br />
+<h2>Edit</h2>
+<br />
+<h2>@Html.DisplayNameFor(model => model.ProductName)</h2>
+
+<form method="post" action="Edit" class="mt-5">
+    
+    @{
+        GlobalData.ShoppingCartOrderId = Model.OrderId;
+    }
+
+    @if (GlobalData.UserAccess != "Customer")
+    {
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.OrderId)</label>
+            <div class="col-sm6">
+                <input type="number" class="form-control" asp-for="OrderId" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CustomerId)</label>
+            <div class="col-sm6">
+                     @Html.DropDownListFor(model => model.CustomerId, new SelectList( ViewBag.CustomersList, "CustomerId", "CustomersListItem") , "Select Kunde")
+            </div>
+        </div>
+    }
+    @{
+        // available only to Managers
+        // nur für Manager verfügbar
+    
+        @if (GlobalData.UserAccess == "Manager")
+        {
+            <div class="form-group">
+                <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.SalesPersonId)</label>
+                <div class="col-sm6">
+                            @Html.DropDownListFor(model => model.SalesPersonId, new SelectList( ViewBag.SalesPersonsList, "SalesId", "SalespersonsListItem"))
+                </div>
+            </div>
+        }
+    }
+    @if (GlobalData.UserAccess != "Customer")
+    {
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.ProductId)</label>
+            <div class="col-sm6">
+                <input type="number" class="form-control" asp-for="ProductId" readonly>
+            </div>
+        </div>
+    }
+    @{
+        // If the product identifier is a car accessory, then the product group and product name are visible, if it is a car, then the model and color   
+        // Wenn die Produktkennung ein Autozubehör ist, dann sind Produktgruppe und Produktname sichtbar, wenn es sich um ein Auto handelt, dann das Modell und die Farbe
+    }
+    @if (Model.ProductId < 1000000)
+    {
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.ProductGroup)</label>
+            <div class="col-sm6">
+                <input type="text" class="form-control" asp-for="ProductGroup" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.ProductName)</label>
+            <div class="col-sm6">
+                <input type="text" class="form-control" asp-for="ProductName" readonly>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CarModel)</label>
+            <div class="col-sm6">
+                <input type="text" class="form-control" asp-for="CarModel" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.CarColor)</label>
+            <div class="col-sm6">
+                <input type="text" class="form-control" asp-for="CarColor" readonly>
+            </div>
+        </div>
+    }
+    @if (GlobalData.UserAccess != "Customer")
+    {
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.SaleAmount)</label>
+            <div class="col-sm6">
+                <input type="text" class="form-control" asp-for="SaleAmount" readonly>
+            </div>
+        </div>
+    }
+    @{
+        // if it is a car, the quantity can only be 1
+        @if (Model.ProductId < 1000000)
+        {
+                        <div class="form-group">
+                            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Quantity)</label>
+                            <div class="col-sm6">
+                                <input type="number" class="form-control" asp-for="Quantity">
+                            </div>
+                        </div> 
+        }
+        else
+        {
+                        <div class="form-group">
+                            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.Quantity)</label>
+                            <div class="col-sm6">
+                                <input type="number" class="form-control" asp-for="Quantity" readonly>
+                            </div>
+                        </div> 
+        }
+    }
+    @if (GlobalData.UserAccess != "Customer")
+    {
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.TaxPercentageValue)</label>
+            <div class="col-sm6">
+                <input type="text" class="form-control" asp-for="TaxPercentageValue" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.OrderStatusId)</label>
+            <div class="col-sm6">
+                <input type="number" class="form-control" asp-for="OrderStatusId" readonly>
+            </div>
+        </div>
+
+    }
+
+<br />
+    <button type="submit" class="btn-primary">Submit</button>
+</form>

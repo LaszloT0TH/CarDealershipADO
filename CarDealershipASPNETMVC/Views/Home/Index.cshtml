@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Car Dealership</h1>
+    @if (GlobalData.UserAccess == "Guest")
+    {
+        <br />
+        <a class='btn btn-primary btn-sm' @Html.ActionLink("Login", "Login")></a>
+    }
+    
+</div>

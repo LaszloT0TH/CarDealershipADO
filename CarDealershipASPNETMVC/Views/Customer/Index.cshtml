@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.CustomerModel>
+
+@{
+}
+
+<h1>Kunde</h1>
+
+<br />
+<h2>Kunden Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Kunde", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create neue Kunde", "Create")</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CustomerId)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+            <th>@Html.DisplayNameFor(model => model.LastName)</th>
+            <th>@Html.DisplayNameFor(model => model.SexName)</th>
+            <th>@Html.DisplayNameFor(model => model.Street)</th>
+            <th>@Html.DisplayNameFor(model => model.House_Number)</th>
+            <th>@Html.DisplayNameFor(model => model.PostalCode)</th>
+            <th>@Html.DisplayNameFor(model => model.Location)</th>
+            <th>@Html.DisplayNameFor(model => model.CountryName)</th>
+            <th>@Html.DisplayNameFor(model => model.DateOfBirth)</th>
+            <th>@Html.DisplayNameFor(model => model.TelNr)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CustomerModel customer in Model)
+        {
+            <tr>
+                <td>@customer.CustomerId</td>
+                <td>@customer.FirstName</td>
+                <td>@customer.LastName</td>
+                <td>@customer.SexName</td>
+                <td>@customer.Street</td>
+                <td>@customer.House_Number</td>
+                <td>@customer.PostalCode</td>
+                <td>@customer.Location</td>
+                <td>@customer.CountryName</td>
+                <td>@customer.DateOfBirth.ToString()</td>
+                <td>@customer.TelNr</td>
+                <td>@customer.Email</td>
+                <td>                     
+                    <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=customer.CustomerId })></a>
+  
+                    <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=customer.CustomerId })></a>
+
+                </td>
+                
+                
+            </tr>
+        }
+    </tbody>
+</table>

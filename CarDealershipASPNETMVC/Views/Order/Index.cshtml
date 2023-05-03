@@ -1,0 +1,82 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.OrderModel>
+
+@{
+}
+
+<h1>Auftrag</h1>
+
+<br />
+<h2>Aufträge Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Aufträge", "Search")</a>
+
+@if (GlobalData.UserAccess == "Manager" && ViewBag.StockReplenishmentListCount > 0)
+{
+    // if manager and warehouse download list are not empty
+    // wenn Manager- und Warehouse-Download-Liste nicht leer sind
+    <a class='btn btn-primary btn-sm' @Html.ActionLink("Bestandsauffüllungsliste", "StockReplenishmentList")></a>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.OrderId)</th>
+            <th>@Html.DisplayNameFor(model => model.CustomerId)</th>
+            <th>@Html.DisplayNameFor(model => model.CustomerFirstName)</th>
+            <th>@Html.DisplayNameFor(model => model.CustomerLastName)</th>
+            <th>@Html.DisplayNameFor(model => model.SalesPersonId)</th>
+            <th>@Html.DisplayNameFor(model => model.SalesPersonFirstName)</th>
+            <th>@Html.DisplayNameFor(model => model.SalesPersonLastName)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductId)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductGroup)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductName)</th>
+            <th>@Html.DisplayNameFor(model => model.CarModel)</th>
+            <th>@Html.DisplayNameFor(model => model.CarColor)</th>
+            <th>@Html.DisplayNameFor(model => model.Quantity)</th>
+            <th>@Html.DisplayNameFor(model => model.OrderDate)</th>
+            <th>@Html.DisplayNameFor(model => model.OrderStatusId)</th>
+            <th>@Html.DisplayNameFor(model => model.OrderStatusName)</th>
+            <th>@Html.DisplayNameFor(model => model.Discount)</th>
+            <th>@Html.DisplayNameFor(model => model.ShippedDate)</th>
+            <th>@Html.DisplayNameFor(model => model.SaleAmount)</th>
+            <th>@Html.DisplayNameFor(model => model.SaleAmountPaid)</th>
+            <th>@Html.DisplayNameFor(model => model.TaxPercentageValue)</th>
+            <th>@Html.DisplayNameFor(model => model.SaleTime)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (OrderModel order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.CustomerId</td>
+                <td>@order.CustomerFirstName</td>
+                <td>@order.CustomerLastName</td>
+                <td>@order.SalesPersonId</td>
+                <td>@order.SalesPersonFirstName</td>
+                <td>@order.SalesPersonLastName</td>
+                <td>@order.ProductId</td>
+                <td>@order.ProductGroup</td>
+                <td>@order.ProductName</td>
+                <td>@order.CarModel</td>
+                <td>@order.CarColor</td>
+                <td>@order.Quantity</td>
+                <td>@order.OrderDate.ToString()</td>
+                <td>@order.OrderStatusId</td>
+                <td>@order.OrderStatusName</td>
+                <td>@Convert.ToDouble(@order.Discount).ToString("0.##")</td>
+                <td>@order.ShippedDate.ToString()</td>
+                <td>@Convert.ToDouble(order.SaleAmount).ToString("0.##")</td>
+                <td>@Convert.ToDouble(order.SaleAmountPaid).ToString("0.##")</td>
+                <td>@order.TaxPercentageValue</td>
+                <td>@order.SaleTime.ToString()</td>
+                <td>                     
+                    <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=order.OrderId })></a>
+  
+                    <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=order.OrderId })></a>
+
+                </td>
+                
+                
+            </tr>
+        }
+    </tbody>
+</table>

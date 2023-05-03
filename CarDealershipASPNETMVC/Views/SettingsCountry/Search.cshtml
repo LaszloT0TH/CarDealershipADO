@@ -1,0 +1,33 @@
+﻿@model CarDealershipASPNETMVC.Models.CountryModel
+
+@{
+   
+}
+<br />
+<h2>Search Countries</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CountryId" class="control-label"></label>
+                <input asp-for="CountryId" class="form-control" />
+                <span asp-validation-for="CountryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountryName" class="control-label"></label>
+                <input asp-for="CountryName" class="form-control" />
+                <span asp-validation-for="CountryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountryTaxPercentageValue" class="control-label"></label>
+                <input asp-for="CountryTaxPercentageValue" class="form-control" />
+                <span asp-validation-for="CountryTaxPercentageValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

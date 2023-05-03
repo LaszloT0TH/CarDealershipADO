@@ -1,0 +1,22 @@
+﻿@model CarDealershipASPNETMVC.Models.SpokenLanguesModel
+@{
+}
+<br />
+<h2>Edit Muttersprache</h2>
+
+<form method="post" action="Edit" class="mt-5">
+     <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.SpokenLanguesId)</label>
+        <div class="col-sm6">
+            <input type="number" class="form-control" asp-for="SpokenLanguesId" readonly>
+        </div>
+    </div>
+    <div class="row-mb3">
+        <label class="col-sm3 col-form-label">@Html.DisplayNameFor(model => model.SpokenLanguesName)</label>
+        <div class="col-sm6">
+            <input type="text" class="form-control" asp-for="SpokenLanguesName">
+        </div>
+    </div>
+<br />
+    <button type="submit" class="btn-primary">Submit</button>
+</form>

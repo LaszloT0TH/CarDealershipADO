@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.SalespersonModel>
+
+@{
+}
+
+<h1>Verkäufer</h1>
+
+<br />
+<h2>Verkäufer Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Verkäufer", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create Verkäufer", "Create")</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.SalesId)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+            <th>@Html.DisplayNameFor(model => model.LastName)</th>
+            <th>@Html.DisplayNameFor(model => model.SexName)</th>
+            <th>@Html.DisplayNameFor(model => model.SpokenLanguesName)</th>
+            <th>@Html.DisplayNameFor(model => model.ManagerFirstName)</th>
+            <th>@Html.DisplayNameFor(model => model.ManagerLastName)</th>
+            <th>@Html.DisplayNameFor(model => model.DateOfBirth)</th>
+            <th>@Html.DisplayNameFor(model => model.Street)</th>
+            <th>@Html.DisplayNameFor(model => model.House_Number)</th>
+            <th>@Html.DisplayNameFor(model => model.PostalCode)</th>
+            <th>@Html.DisplayNameFor(model => model.Location)</th>
+            <th>@Html.DisplayNameFor(model => model.CountryName)</th>
+            <th>@Html.DisplayNameFor(model => model.EntryDate)</th>
+            <th>@Html.DisplayNameFor(model => model.TelNr)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (SalespersonModel salesperson in Model)
+        {
+            <tr>
+                <td>@salesperson.SalesId</td>
+                <td>@salesperson.FirstName</td>
+                <td>@salesperson.LastName</td>
+                <td>@salesperson.SexName</td>
+                <td>@salesperson.SpokenLanguesName</td>
+                <td>@salesperson.ManagerFirstName</td>
+                <td>@salesperson.ManagerLastName</td>
+                <td>@salesperson.DateOfBirth.ToString()</td>
+                <td>@salesperson.Street</td>
+                <td>@salesperson.House_Number</td>
+                <td>@salesperson.PostalCode</td>
+                <td>@salesperson.Location</td>
+                <td>@salesperson.CountryName</td>
+                <td>@salesperson.EntryDate.ToString()</td>
+                <td>@salesperson.TelNr</td>
+                <td>@salesperson.Email</td>
+                <td>                     
+                    <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=salesperson.SalesId })></a>
+  
+                    <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=salesperson.SalesId })></a>
+
+                </td>
+                
+                
+            </tr>
+        }
+    </tbody>
+</table>

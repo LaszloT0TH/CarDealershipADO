@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CarDealershipASPNETMVC.Models.CarAccessoriesUnitModel>
+
+@{ 
+}
+
+<h1>Einheit</h1>
+
+<br />
+<h2>Einheits Liste</h2>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Search Einheit", "Search")</a>
+<a class='btn btn-primary btn-sm' @Html.ActionLink("Create neu Einheit", "Create")></a>      
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CAUId)</th>
+            <th>@Html.DisplayNameFor(model => model.UnitName)</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (CarAccessoriesUnitModel CAU in Model)
+            {
+                <tr>
+                    <td>@CAU.CAUId</td>
+                    <td>@CAU.UnitName</td>
+                    <td>                     
+                        <a class="btn btn-primary btn-sm" @Html.ActionLink("Edit", "Edit", new { id=CAU.CAUId })></a>
+                        
+                        <a class="btn btn-danger btn-sm" @Html.ActionLink("Delete", "Delete", new { id=CAU.CAUId })></a>                
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>

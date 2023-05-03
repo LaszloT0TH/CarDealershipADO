@@ -1,0 +1,18 @@
+﻿@model CarDealershipASPNETMVC.Models.CustomerModel
+
+@{
+}
+<br />
+<h2>Kunde hinzufüegen</h2>
+
+<form method="post" action="AddCustoner" class="mt-5">
+    
+    <div class="form-group">
+            <label class="col-sm3 col-form-label">Kunde Liste</label>
+            <div class="col-sm6">
+                     @Html.DropDownListFor(model => model.CustomerId, new SelectList( ViewBag.CustomersList, "CustomerId", "CustomersListItem") , "Select Kunde")
+            </div>
+        </div>
+<br />
+    <button type="submit" class="btn-primary">Submit</button>
+</form>
